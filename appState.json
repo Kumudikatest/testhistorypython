@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testcreatedbhistorypython.py",
         "cursor": {
-          "lineNumber": 9,
-          "column": 1
+          "lineNumber": 18,
+          "column": 31
         },
         "config": {
           "runtime": "python3.6",
@@ -42,8 +42,8 @@
         "isRemovable": true,
         "filePath": "testsendemailpython.py",
         "cursor": {
-          "lineNumber": 10,
-          "column": 5
+          "lineNumber": 11,
+          "column": 50
         },
         "config": {
           "runtime": "python3.6",
@@ -66,8 +66,8 @@
             "id": "e8080459-5eb5-4064-82c0-847ee993195f",
             "name": "Test event",
             "functionId": "02b10ba7-8939-4024-bd76-3276202d8653",
-            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
-            "eventTemplate": "hello-world"
+            "event": "{\r\n    \"Records\": [\r\n        {\r\n            \"eventID\": \"c4ca4238a0b923820dcc509a6f75849b\",\r\n            \"eventName\": \"INSERT\",\r\n            \"eventVersion\": \"1.1\",\r\n            \"eventSource\": \"aws:dynamodb\",\r\n            \"awsRegion\": \"us-east-1\",\r\n            \"dynamodb\": {\r\n                \"Keys\": {\r\n                    \"Name\": {\r\n                        \"S\": \"as\"\r\n                    }\r\n                },\r\n                \"NewImage\": {\r\n                    \"Email\": {\r\n                        \"S\": \"kumudika@adroitlogic.com\"\r\n                    },\r\n                    \"Name\": {\r\n                        \"S\": \"as\"\r\n                    },\r\n                    \"URL\": {\r\n                        \"S\": \"http//:google.com\"\r\n                    }\r\n                },\r\n                \"ApproximateCreationDateTime\": 1428537600,\r\n                \"SequenceNumber\": \"4421584500000000017450439091\",\r\n                \"SizeBytes\": 26,\r\n                \"StreamViewType\": \"NEW_AND_OLD_IMAGES\"\r\n            },\r\n            \"eventSourceARN\": \"arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899\"\r\n        }\r\n    ]\r\n}",
+            "eventTemplate": "dynamodb-update"
           }
         }
       }
@@ -161,7 +161,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1583833861399
+    "lastSave": 1583844928555
   },
   "VCS_STATE": {
     "provider": "GitHub",
