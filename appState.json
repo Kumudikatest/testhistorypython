@@ -42,8 +42,8 @@
         "isRemovable": true,
         "filePath": "testsendemailpython.py",
         "cursor": {
-          "lineNumber": 28,
-          "column": 44
+          "lineNumber": 10,
+          "column": 5
         },
         "config": {
           "runtime": "python3.6",
@@ -161,7 +161,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1583830086057
+    "lastSave": 1583833861399
   },
   "VCS_STATE": {
     "provider": "GitHub",
