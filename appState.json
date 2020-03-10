@@ -4,12 +4,12 @@
       "88b779a2-4576-4deb-8737-999d86d9560a": {
         "id": "88b779a2-4576-4deb-8737-999d86d9560a",
         "parent": null,
-        "name": "testcreatedbhistory.py",
+        "name": "testcreatedbhistorypython.py",
         "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "testcreatedbhistory.py",
+        "filePath": "testcreatedbhistorypython.py",
         "cursor": {
           "lineNumber": 9,
           "column": 1
@@ -35,12 +35,12 @@
       "02b10ba7-8939-4024-bd76-3276202d8653": {
         "id": "02b10ba7-8939-4024-bd76-3276202d8653",
         "parent": null,
-        "name": "testsendemail.py",
+        "name": "testsendemailpython.py",
         "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "testsendemail.py",
+        "filePath": "testsendemailpython.py",
         "cursor": {
           "lineNumber": 28,
           "column": 44
@@ -161,7 +161,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1583829685973
+    "lastSave": 1583830086057
   },
   "VCS_STATE": {
     "provider": "GitHub",
