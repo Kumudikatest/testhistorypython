@@ -1,0 +1,173 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "88b779a2-4576-4deb-8737-999d86d9560a": {
+        "id": "88b779a2-4576-4deb-8737-999d86d9560a",
+        "parent": null,
+        "name": "testcreatedbhistory.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testcreatedbhistory.py",
+        "cursor": {
+          "lineNumber": 9,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "dc58b08f-50bb-492f-922e-e5c59af50e40": {
+            "id": "dc58b08f-50bb-492f-922e-e5c59af50e40",
+            "name": "Test event",
+            "functionId": "88b779a2-4576-4deb-8737-999d86d9560a",
+            "event": "{\r\n    \"Name\": \"Sheldon\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://staging-sigma.slappforge.com/#/editor\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "02b10ba7-8939-4024-bd76-3276202d8653": {
+        "id": "02b10ba7-8939-4024-bd76-3276202d8653",
+        "parent": null,
+        "name": "testsendemail.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testsendemail.py",
+        "cursor": {
+          "lineNumber": 28,
+          "column": 44
+        },
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "ddbtesthistory",
+            "config": {
+              "StartingPosition": "LATEST",
+              "BatchSize": "100"
+            }
+          }
+        ],
+        "testCases": {
+          "e8080459-5eb5-4064-82c0-847ee993195f": {
+            "id": "e8080459-5eb5-4064-82c0-847ee993195f",
+            "name": "Test event",
+            "functionId": "02b10ba7-8939-4024-bd76-3276202d8653",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "88b779a2-4576-4deb-8737-999d86d9560a",
+      "02b10ba7-8939-4024-bd76-3276202d8653"
+    ],
+    "currentFileId": "02b10ba7-8939-4024-bd76-3276202d8653",
+    "resources": {
+      "ddbtesthistory": {
+        "name": "ddbtesthistory",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:318300609668:table/testhistory",
+            "name": "testhistory",
+            "partitionKey": "Name",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1,
+            "streamArn": "arn:aws:dynamodb:us-east-1:318300609668:table/testhistory/stream/2020-03-08T17:34:03.822"
+          },
+          "isGlobalEditMode": false,
+          "parameters": {
+            "Key": {},
+            "Item": {},
+            "ExpressionAttributeValues": {}
+          },
+          "triggerParams": {
+            "StartingPosition": "LATEST",
+            "BatchSize": "100"
+          },
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          },
+          "valid": true
+        }
+      },
+      "ses-kumudika@adroitlogic.com": {
+        "name": "ses-kumudika@adroitlogic.com",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "kumudika@adroitlogic.com",
+          "projectRegion": "us-east-1"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.9.6",
+          "dev": true,
+          "notRemovable": false
+        },
+        "json": {
+          "name": "json",
+          "version": "18.2",
+          "dev": true,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testhistory",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1583829685973
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testhistorypython",
+      "url": "https://github.com/Kumudikatest/testhistorypython"
+    }
+  }
+}
